@@ -11,18 +11,23 @@
 </head>
 <body>
     <div class="slider-body-container">
-        <div class="slider-container">
+        <div class="slider-container">            
             <div class="slider">
-                <div class="slide"><img class="mem-style" src="Memes images/wakeUp.jpg" alt="wake_up_mem"></div>
-                <div class="slide"><img class="mem-style" src="Memes images/howMyCodeWork.jpeg" alt="how_code_work_mem"></div>
+                <input type="radio" name="slide" id="mem1" checked>
+                <input type="radio" name="slide" id="mem2">
+                <input type="radio" name="slide" id="mem3">
+                <input type="radio" name="slide" id="mem4">
+                <div class="slide on-screen"><img class="mem-style" src="Memes images/wakeUp.jpg" alt="wake_up_mem"></div>
+                <div class="slide "><img class="mem-style" src="Memes images/howMyCodeWork.jpeg" alt="how_code_work_mem"></div>
                 <div class="slide"><img class="mem-style" src="Memes images/meWhenMyProgWork.png" alt="when_code_work_mem"></div>
                 <div class="slide"><img class="mem-style" src="Memes images/dicaprio.jpg" alt="money_mem"></div>
+
             </div>
         </div>
         <div class="text-and-controls-container">
             <div class="text-section-container">
                 <div>
-                    <p class="text-style">Wake up student, we have a task to do!</p>
+                    <p class="text-style">Wake the hack up student, we have a task to solve!</p>
                 </div>
                 <div>
                     <p class="text-style">Me when I explain how my code works.</p>
@@ -36,10 +41,10 @@
             </div>
             <div class="controls-section-container">
                 <div class="radio-container">
-                <input type="radio" name="radio" checked>
-                <input type="radio" name="radio">
-                <input type="radio" name="radio">
-                <input type="radio" name="radio">
+                <label for="mem1" class="custom-radio-btn"></label>
+                <label for="mem2" class="custom-radio-btn"></label>
+                <label for="mem3" class="custom-radio-btn"></label>
+                <label for="mem4" class="custom-radio-btn"></label>
             </div>
             </div>
         </div>
