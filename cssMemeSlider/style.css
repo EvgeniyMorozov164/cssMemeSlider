@@ -61,7 +61,7 @@ input[name="slide"] {
     flex-basis: 30%;
 }
 
-.text-style {    
+.text-style {        
     color:rgb(32, 230, 6);
 }
 
@@ -86,11 +86,7 @@ input[name="slide"] {
 }
 
 .custom-radio-btn:active {
-    width: 0.75rem;
-    height: 0.75rem;
-    background-color: black;
-    border: white 0.125rem solid;
-
+    background-color: rgb(202, 198, 198);
 }
 
 
@@ -109,4 +105,52 @@ input[name="slide"] {
 
 #mem4:checked ~ .on-screen {
     margin-left: -75%;
+}
+
+@media (max-width: 1200) {
+    .slider {            
+        height:55vh;        
+    }
+}
+
+@media (max-width: 1023px) {
+    .slider {            
+        height:55vh;        
+    }
+
+    .custom-radio-btn {
+        width: 0.75rem;
+        height: 0.75rem;   
+        
+        border-radius: 0.5rem;
+        margin-right: 0.5rem;       
+        
+    }
+
+    .text-and-controls-container {
+        display: flex;
+        flex-direction: column-reverse;
+        width:65%;
+        margin-top: 1rem;   
+        margin-bottom: 1rem;
+    }
+
+    .radio-container {        
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        width: 80%
+    }
+
+    .slider {                   
+        height: 35vh;        
+    }
+
+    .text-and-controls-container {
+        width: 80%;
+    }
 }
